@@ -46,6 +46,9 @@
                 }
               ],
               "outputHashing": "all",
+              "optimization": true,
+              "buildOptimizer": true,
+              "sourceMap": false,
               "extraWebpackConfig": "webpack.prod.config.js"
             },
             "development": {
@@ -57,14 +60,14 @@
               "namedChunks": true
             }
           },
-          "defaultConfiguration": "production"
+          "defaultConfiguration": "development"
         },
         "serve": {
           "builder": "ngx-build-plus:dev-server",
           "options": {
             "browserTarget": "products:build:development",
             "port": 4201,
-            "publicHost": "http://localhost:4201",
+            "host": "0.0.0.0",
             "extraWebpackConfig": "webpack.config.js"
           },
           "configurations": {
@@ -73,16 +76,16 @@
               "extraWebpackConfig": "webpack.prod.config.js"
             },
             "development": {
-              "browserTarget": "products:build:development"
+              "browserTarget": "products:build:development",
+              "extraWebpackConfig": "webpack.config.js"
             }
           },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
-          "builder": "ngx-build-plus:extract-i18n",
+          "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "products:build",
-            "extraWebpackConfig": "webpack.config.js"
+            "browserTarget": "products:build"
           }
         },
         "test": {
@@ -105,5 +108,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }
