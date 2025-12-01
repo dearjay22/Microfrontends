@@ -62,7 +62,7 @@
         "serve": {
           "builder": "ngx-build-plus:dev-server",
           "options": {
-            "browserTarget": "shell:build:development",
+            "browserTarget": "shell:build",
             "port": 4200,
             "publicHost": "http://localhost:4200",
             "extraWebpackConfig": "webpack.config.js"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "ngx-build-plus:extract-i18n",
           "options": {
-            "browserTarget": "shell:build:development",
+            "browserTarget": "shell:build",
             "extraWebpackConfig": "webpack.config.js"
           }
         },
@@ -108,6 +108,6 @@
     }
   },
   "cli": {
-    "analytics": "2e8db870-e7a3-47f0-ab2e-e67bdc8c2c59"
+    "analytics": "4353bcd6-679f-4dcc-8dd9-4ee144777c7a"
   }
 }

@@ -2896,11 +2896,11 @@ Zone.__load_patch('queueMicrotask', (global, Zone, api) => {
 /******/ 			var promises = [];
 /******/ 			switch(name) {
 /******/ 				case "default": {
-/******/ 					register("@angular/common/http", "16.2.12", () => (__webpack_require__.e("node_modules_angular_common_fesm2022_http_mjs-_f9340").then(() => (() => (__webpack_require__(/*! ./node_modules/@angular/common/fesm2022/http.mjs */ 6443))))));
-/******/ 					register("@angular/common", "16.2.12", () => (__webpack_require__.e("node_modules_angular_common_fesm2022_common_mjs-_b4621").then(() => (() => (__webpack_require__(/*! ./node_modules/@angular/common/fesm2022/common.mjs */ 316))))));
-/******/ 					register("@angular/core", "16.2.12", () => (__webpack_require__.e("node_modules_angular_core_fesm2022_core_mjs").then(() => (() => (__webpack_require__(/*! ./node_modules/@angular/core/fesm2022/core.mjs */ 7580))))));
-/******/ 					register("@angular/platform-browser", "16.2.12", () => (__webpack_require__.e("node_modules_angular_platform-browser_fesm2022_platform-browser_mjs-_e89f1").then(() => (() => (__webpack_require__(/*! ./node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs */ 436))))));
-/******/ 					register("@angular/router", "16.2.12", () => (__webpack_require__.e("node_modules_angular_router_fesm2022_router_mjs-_5a221").then(() => (() => (__webpack_require__(/*! ./node_modules/@angular/router/fesm2022/router.mjs */ 5072))))));
+/******/ 					register("@angular/common/http", "16.1.0", () => (__webpack_require__.e("node_modules_angular_common_fesm2022_http_mjs-_f9340").then(() => (() => (__webpack_require__(/*! ./node_modules/@angular/common/fesm2022/http.mjs */ 6443))))));
+/******/ 					register("@angular/common", "16.1.0", () => (__webpack_require__.e("node_modules_angular_common_fesm2022_common_mjs-_b4621").then(() => (() => (__webpack_require__(/*! ./node_modules/@angular/common/fesm2022/common.mjs */ 316))))));
+/******/ 					register("@angular/core", "16.1.0", () => (__webpack_require__.e("node_modules_angular_core_fesm2022_core_mjs").then(() => (() => (__webpack_require__(/*! ./node_modules/@angular/core/fesm2022/core.mjs */ 7580))))));
+/******/ 					register("@angular/platform-browser", "16.1.0", () => (__webpack_require__.e("node_modules_angular_platform-browser_fesm2022_platform-browser_mjs-_e89f0").then(() => (() => (__webpack_require__(/*! ./node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs */ 436))))));
+/******/ 					register("@angular/router", "16.1.0", () => (__webpack_require__.e("node_modules_angular_router_fesm2022_router_mjs-_5a221").then(() => (() => (__webpack_require__(/*! ./node_modules/@angular/router/fesm2022/router.mjs */ 5072))))));
 /******/ 				}
 /******/ 				break;
 /******/ 			}
@@ -3067,32 +3067,33 @@ Zone.__load_patch('queueMicrotask', (global, Zone, api) => {
 /******/ 		});
 /******/ 		var installedModules = {};
 /******/ 		var moduleToHandlerMapping = {
-/******/ 			8264: () => (loadStrictSingletonVersion("default", "@angular/core", false, [1,16,2,12], () => (__webpack_require__.e("node_modules_angular_core_fesm2022_core_mjs").then(() => (() => (__webpack_require__(/*! @angular/core */ 7580))))))),
-/******/ 			9922: () => (loadStrictSingletonVersion("default", "@angular/common", false, [1,16,2,12], () => (__webpack_require__.e("node_modules_angular_common_fesm2022_common_mjs-_b4620").then(() => (() => (__webpack_require__(/*! @angular/common */ 316))))))),
-/******/ 			2386: () => (loadStrictSingletonVersion("default", "@angular/common/http", false, [1,16,2,12], () => (__webpack_require__.e("node_modules_angular_common_fesm2022_http_mjs-_f9341").then(() => (() => (__webpack_require__(/*! @angular/common/http */ 6443))))))),
-/******/ 			5759: () => (loadStrictSingletonVersion("default", "@angular/platform-browser", false, [1,16,2,12], () => (__webpack_require__.e("node_modules_angular_platform-browser_fesm2022_platform-browser_mjs-_e89f0").then(() => (() => (__webpack_require__(/*! @angular/platform-browser */ 436)))))))
+/******/ 			1108: () => (loadStrictSingletonVersion("default", "@angular/common", false, [1,16,1,0], () => (__webpack_require__.e("node_modules_angular_common_fesm2022_common_mjs-_b4620").then(() => (() => (__webpack_require__(/*! @angular/common */ 316))))))),
+/******/ 			3062: () => (loadStrictSingletonVersion("default", "@angular/core", false, [1,16,1,0], () => (__webpack_require__.e("node_modules_angular_core_fesm2022_core_mjs").then(() => (() => (__webpack_require__(/*! @angular/core */ 7580))))))),
+/******/ 			5086: () => (loadStrictSingletonVersion("default", "@angular/common/http", false, [1,16,1,0], () => (__webpack_require__.e("node_modules_angular_common_fesm2022_http_mjs-_f9341").then(() => (() => (__webpack_require__(/*! @angular/common/http */ 6443))))))),
+/******/ 			2691: () => (loadStrictSingletonVersion("default", "@angular/platform-browser", false, [1,16,1,0], () => (__webpack_require__.e("node_modules_angular_platform-browser_fesm2022_platform-browser_mjs-_e89f1").then(() => (() => (__webpack_require__(/*! @angular/platform-browser */ 436)))))))
 /******/ 		};
 /******/ 		// no consumes in initial chunks
 /******/ 		var chunkMapping = {
 /******/ 			"node_modules_angular_common_fesm2022_http_mjs-_f9340": [
-/******/ 				8264,
-/******/ 				9922
+/******/ 				1108,
+/******/ 				3062
 /******/ 			],
 /******/ 			"node_modules_angular_common_fesm2022_common_mjs-_b4621": [
-/******/ 				8264
-/******/ 			],
-/******/ 			"node_modules_angular_platform-browser_fesm2022_platform-browser_mjs-_e89f1": [
-/******/ 				2386,
-/******/ 				8264,
-/******/ 				9922
-/******/ 			],
-/******/ 			"node_modules_angular_router_fesm2022_router_mjs-_5a221": [
-/******/ 				8264,
-/******/ 				9922,
-/******/ 				5759
+/******/ 				3062
 /******/ 			],
 /******/ 			"node_modules_angular_platform-browser_fesm2022_platform-browser_mjs-_e89f0": [
-/******/ 				2386
+/******/ 				1108,
+/******/ 				3062,
+/******/ 				5086
+/******/ 			],
+/******/ 			"node_modules_angular_router_fesm2022_router_mjs-_5a221": [
+/******/ 				3062,
+/******/ 				1108,
+/******/ 				2691
+/******/ 			],
+/******/ 			"node_modules_angular_platform-browser_fesm2022_platform-browser_mjs-_e89f1": [
+/******/ 				1108,
+/******/ 				5086
 /******/ 			]
 /******/ 		};
 /******/ 		var startedInstallModules = {};
